@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/First-PJ/static/js/main.30ff5faa.js",
+    "main.css": "/First-PJ/static/css/main.e0f87bfb.css",
+    "main.js": "/First-PJ/static/js/main.cd37a7a1.js",
     "index.html": "/First-PJ/index.html",
-    "main.30ff5faa.js.map": "/First-PJ/static/js/main.30ff5faa.js.map"
+    "main.e0f87bfb.css.map": "/First-PJ/static/css/main.e0f87bfb.css.map",
+    "main.cd37a7a1.js.map": "/First-PJ/static/js/main.cd37a7a1.js.map"
   },
   "entrypoints": [
-    "static/js/main.30ff5faa.js"
+    "static/css/main.e0f87bfb.css",
+    "static/js/main.cd37a7a1.js"
   ]
 }
