@@ -3,9 +3,14 @@ import { Link } from "react-router-dom";
 import styles from "./Movie.module.css"
 
 function Movie({ coverImg, title, year, summary, genres, id }) {
+    function handleImgError(event) {
+        event.target.classList = styles.error__img;
+    }
     return (
         <div className={styles.movie}>
-            <img src={coverImg} alt={title} className={styles.movie__img} />
+            <Link to={`/movie/${id}`}>
+                <img src={coverImg} alt={title} className={styles.movie__img} onError={handleImgError} />
+            </Link>
             <div>
                 <h2 className={styles.movie__title}>
                     <Link to={`/movie/${id}`}>{title}</Link>
@@ -14,7 +19,7 @@ function Movie({ coverImg, title, year, summary, genres, id }) {
                 <p>{summary.length > 235 ? `${summary.slice(0, 235)}...` : summary}</p>
                 <ul className={styles.movie__genres}>
                     {genres.map((g) =>
-                        <li key={g}>{g}</li>
+                        <li className={styles.movie__genre} key={g}>{g}</li>
                     )}
                 </ul>
             </div>

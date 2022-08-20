@@ -25,10 +25,9 @@ function Detail() {
             ) :
                 <div>
                     <img src={details.medium_cover_image} alt={details.title} />
-                    <h1>{details.title} ({details.year}) </h1>
-                    <br />
-                    <p> download_count : {details.download_count} </p>
-                    <p> Like : {details.like_count} </p>
+                    <h1>{details.title}</h1>
+                    <h1> {details.year} </h1>
+                    <h1> {details.description_full}</h1>
                 </div>
             }
         </div >

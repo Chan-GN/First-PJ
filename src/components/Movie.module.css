@@ -27,7 +27,7 @@
 .movie__title,
 .movie__year {
     margin: 0;
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -40,6 +40,7 @@
 
 .movie__genres {
     list-style: none;
+    font-weight: 350;
     padding: 0;
     margin: 0;
     display: flex;
@@ -51,4 +52,15 @@
 .movie__year {
     margin-right: 10px;
     font-size: 14px;
+}
+
+.movie__genre {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 8px;
+}
+
+.error__img {
+    display: none;
 }
